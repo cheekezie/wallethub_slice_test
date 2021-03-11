@@ -1,0 +1,49 @@
+@import './functions';
+
+.bg-app-primary {
+  background: color(primary);
+}
+.bg-off-white {
+  background: color(off-white);
+}
+.bg-app-light {
+  background: color(light);
+}
+.bg-app-secondary {
+  background: color(secondary);
+}
+.bg-app-tertiary {
+  background: color(tertiary);
+}
+.bg-red {
+  background: color(_red);
+}
+.bg-grey-200 {
+  background: color(grey-200);
+}
+.bg-grey-300 {
+  background: color(grey-300);
+}
+.bg-black {
+  background: color(_black);
+}
+.text-grey {
+  color: color(_grey);
+}
+
+.text-grey-100 {
+  color: color(grey-100);
+}
+
+.text-app-black {
+  color: color(_black) !important;
+}
+.text-app-dark {
+  color: color(dark) !important;
+}
+.text-app-secondary {
+  color: color(secondary);
+}
+.border-app-secondary {
+  border: 1px solid color(secondary);
+}

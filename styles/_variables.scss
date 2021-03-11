@@ -1,0 +1,33 @@
+$colorScheme: (
+  primary: #24133b,
+  secondary: #59d8d0,
+  tertiary: #fa6e3d,
+  off-white: #f1f5f8,
+  grey-100: #ddd,
+  _grey: #e2eaf3a6,
+  dark: #3835359a,
+  light: #fff,
+  _black: #000000,
+  _red: #f56198,
+  blue-2: #418bc4,
+  light-blue: #30cdfb,
+  dark-blue: #3b5292,
+);
+
+$breakpoints: (
+  phone: (
+    max-width: 575.98px,
+  ),
+  tablet: (
+    max-width: 767.98px,
+  ),
+  ipad: (
+    max-width: 1023.98px,
+  ),
+  ipad_pro: (
+    max-width: 1399.98px,
+  ),
+  laptop: (
+    max-width: 1400px,
+  ),
+) !default;

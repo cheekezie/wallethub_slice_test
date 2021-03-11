@@ -1,0 +1,85 @@
+@font-face {
+  font-family: ProximaRegular;
+  src: url(../fonts/ProximaNova-Reg.otf) format('opentype');
+}
+@font-face {
+  font-family: ProximaBold;
+  src: url(../fonts/ProximaNova-Bold.otf) format('opentype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: ProximaThin;
+  src: url(../fonts/ProximaNova-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: ProximaLight;
+  src: url(../fonts/Proxima-Nova-Light.otf) format('opentype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: ProximaItalic;
+  src: url(../fonts/Proxima-Nova-Regular-Italic.otf) format('opentype');
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: 'ProximaBold', sans-serif;
+}
+p,
+li,
+a {
+  font-family: 'ProximaBold', serif;
+}
+p {
+  line-height: 30px;
+}
+.font-12 {
+  font-size: 12px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-24 {
+  font-size: 24px;
+}
+.font-32 {
+  font-size: 32px;
+}
+.font-34 {
+  font-size: 34px;
+}
+.font-96 {
+  font-size: 96px !important;
+}
+.weight-700 {
+  font-weight: 700px;
+}
+.weight-600 {
+  font-weight: 600px;
+}
+.weight-800 {
+  font-weight: 800px;
+}
+.line-height-30 {
+  line-height: 30px;
+}
+.line-height-20 {
+  line-height: 20px;
+}
+.text-underline {
+  text-decoration: underline;
+}

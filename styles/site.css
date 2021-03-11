@@ -1,0 +1,383 @@
+/********************/
+/*** SCSS PARTIALS ***/
+/********************/
+@font-face {
+  font-family: ProximaRegular;
+  src: url(../fonts/ProximaNova-Reg.otf) format("opentype");
+}
+
+@font-face {
+  font-family: ProximaBold;
+  src: url(../fonts/ProximaNova-Bold.otf) format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: ProximaThin;
+  src: url(../fonts/ProximaNova-Thin.otf) format("opentype");
+}
+
+@font-face {
+  font-family: ProximaLight;
+  src: url(../fonts/Proxima-Nova-Light.otf) format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: ProximaItalic;
+  src: url(../fonts/Proxima-Nova-Regular-Italic.otf) format("opentype");
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: 'ProximaBold', sans-serif;
+}
+
+p,
+li,
+a {
+  font-family: 'ProximaBold', serif;
+}
+
+p {
+  line-height: 30px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-32 {
+  font-size: 32px;
+}
+
+.font-34 {
+  font-size: 34px;
+}
+
+.font-96 {
+  font-size: 96px !important;
+}
+
+.weight-700 {
+  font-weight: 700px;
+}
+
+.weight-600 {
+  font-weight: 600px;
+}
+
+.weight-800 {
+  font-weight: 800px;
+}
+
+.line-height-30 {
+  line-height: 30px;
+}
+
+.line-height-20 {
+  line-height: 20px;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+button,
+.button {
+  padding: 0.37rem 1rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+button.padding-lg,
+.button.padding-lg {
+  padding: 0.5rem 2rem;
+}
+
+button.padding-sm,
+.button.padding-sm {
+  padding: 0.3rem 1rem;
+}
+
+button.rounded,
+.button.rounded {
+  border-radius: 20px !important;
+}
+
+button.rounded-sm,
+.button.rounded-sm {
+  border-radius: 5px !important;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  height: calc(3em + 0.8rem + 1px) !important;
+  padding: 1.5rem 1.2rem !important;
+  outline: none;
+  outline-width: 0;
+}
+
+input[type='text']:focus, input[type='text']:active,
+input[type='email']:focus,
+input[type='email']:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  outline-width: 0;
+}
+
+input[type='text'].border-none,
+input[type='email'].border-none,
+textarea.border-none {
+  border: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+.bg-app-primary {
+  background: #24133b;
+}
+
+.bg-off-white {
+  background: #f1f5f8;
+}
+
+.bg-app-light {
+  background: #fff;
+}
+
+.bg-app-secondary {
+  background: #59d8d0;
+}
+
+.bg-app-tertiary {
+  background: #fa6e3d;
+}
+
+.bg-red {
+  background: #f56198;
+}
+
+.bg-black {
+  background: #000000;
+}
+
+.text-grey {
+  color: #e2eaf3a6;
+}
+
+.text-grey-100 {
+  color: #ddd;
+}
+
+.text-app-black {
+  color: #000000 !important;
+}
+
+.text-app-dark {
+  color: #3835359a !important;
+}
+
+.text-app-secondary {
+  color: #59d8d0;
+}
+
+.border-app-secondary {
+  border: 1px solid #59d8d0;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("/fonts/fonts-icomoon.eot");
+  src: url("/fonts/fonts-icomoon.eot#iefix") format("embedded-opentype"), url("/fonts/fonts-icomoon.ttf") format("truetype"), url("/fonts/fonts-icomoon.woff") format("woff"), url("/fonts/fonts-icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("/fonts/glyphicons-halflings-regular.eot");
+  src: url("/fonts/glyphicons-halflings-regular.eot#iefix") format("embedded-opentype"), url("/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/fonts/glyphicons-halflings-regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: '\f10b';
+}
+
+.icon-flask:before {
+  content: '\e9AA';
+}
+
+.icon-settings:before {
+  content: '\f085';
+}
+
+.icon-facebook:before {
+  content: '\f09a';
+}
+
+.icon-twitter:before {
+  content: '\f099';
+}
+
+.icon-linkedin:before {
+  content: '\f0e1';
+}
+
+.icon-dribble:before {
+  content: '\f17d';
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+nav {
+  padding: 0 10%;
+}
+
+nav.first-nav {
+  height: 3.5rem;
+}
+
+nav li {
+  width: 33.3%;
+  list-style: none;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav li:not(:last-child) {
+  border-right: 1px solid #f1f5f8;
+}
+
+.banner {
+  padding: 5.5rem 7%;
+  min-height: 90vh;
+  background: url(../image/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.feature {
+  padding: 4rem 10%;
+}
+
+.feature .feature-inner {
+  padding: 3rem 4rem;
+}
+
+.feature .bordered-star {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #59d8d0;
+}
+
+.feature li {
+  margin-bottom: 1rem;
+}
+
+.feature .badge {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+}
+
+.feature button {
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+}
+
+.feature hr {
+  border-top: 1px solid #3835359a;
+}
+
+footer {
+  padding: 0 10% 2rem 10%;
+}
+
+footer .glyph {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+/*# sourceMappingURL=site.css.map */

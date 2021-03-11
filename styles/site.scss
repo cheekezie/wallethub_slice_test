@@ -1,0 +1,94 @@
+/********************/
+/*** SCSS PARTIALS ***/
+/********************/
+@import './mixin';
+@import './functions';
+@import './typography';
+@import './elements';
+@import './color';
+@import './icon';
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+.cursor {
+  cursor: pointer;
+}
+
+//HEADER SECTION
+nav {
+  padding: 0 10%;
+  &.first-nav {
+    height: 3.5rem;
+  }
+  li {
+    width: 33.3%;
+    list-style: none;
+    padding: 1rem 0;
+    text-align: center;
+    &:not(:last-child) {
+      border-right: 1px solid color(off-white); // off-white
+    }
+  }
+}
+
+//  BANNER SECTION
+.banner {
+  padding: 5.5rem 7%;
+  min-height: 90vh;
+  background: url(../image/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// FEATURES
+.feature {
+  padding: 4rem 10%;
+  .feature-inner {
+    padding: 3rem 4rem;
+  }
+  .bordered-star {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: color(secondary);
+  }
+  li {
+    margin-bottom: 1rem;
+  }
+  .badge {
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+  }
+  button {
+    border-radius: 5px;
+    padding: 0.8rem 2rem;
+  }
+  hr {
+    border-top: 1px solid color(dark);
+  }
+}
+
+// FOOTER SECTION
+footer {
+  padding: 0 10% 2rem 10%;
+  .glyph {
+    @include flex-x-center;
+    @include image-size(30px, 30px);
+    border-radius: 50%;
+    font-size: 16px;
+  }
+}
