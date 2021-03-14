@@ -33,7 +33,7 @@ button {
 p,
 li,
 a {
-  font-family: 'ProximaBold', serif;
+  font-family: 'ProximaRegular', serif;
 }
 p {
   line-height: 30px;
@@ -62,24 +62,16 @@ p {
 .font-34 {
   font-size: 34px;
 }
-.font-96 {
-  font-size: 96px !important;
+.font-115 {
+  font-size: 115px !important;
 }
 .weight-700 {
-  font-weight: 700px;
+  font-weight: 700;
 }
 .weight-600 {
-  font-weight: 600px;
+  font-weight: 600;
 }
-.weight-800 {
-  font-weight: 800px;
-}
-.line-height-30 {
-  line-height: 30px;
-}
-.line-height-20 {
-  line-height: 20px;
-}
+
 .text-underline {
   text-decoration: underline;
 }

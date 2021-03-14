@@ -21,10 +21,6 @@ a {
   box-sizing: border-box;
 }
 
-img {
-  width: 100%;
-  max-width: 100%;
-}
 .cursor {
   cursor: pointer;
 }
@@ -32,6 +28,7 @@ img {
 //HEADER SECTION
 nav {
   padding: 0 10%;
+  @include responsive(padding, 0 7%, phone);
   &.first-nav {
     height: 3.5rem;
   }
@@ -41,44 +38,192 @@ nav {
     padding: 1rem 0;
     text-align: center;
     &:not(:last-child) {
-      border-right: 1px solid color(off-white); // off-white
+      border-right: 1px solid color(off-white);
+    }
+    &:nth-child(2) {
+      @include responsive(width, 40%, phone);
+    }
+    &:first-child,
+    &:last-child {
+      @include media(tablet) {
+        width: 30%;
+        text-align: left;
+      }
+    }
+    &:last-child {
+      @include responsive(text-align, right, tablet);
+    }
+    a {
+      font-family: 'ProximaBold', sans-serif !important;
+    }
+    span {
+      @include responsive(display, none, tablet);
     }
   }
 }
 
 //  BANNER SECTION
 .banner {
-  padding: 5.5rem 7%;
-  min-height: 90vh;
-  background: url(../image/banner.png);
+  // padding: 4.5rem 9%;
+  min-height: 89vh;
+  background: color(primary); // url(../image/banner2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  overflow-x: hidden;
+  h6 {
+    position: absolute;
+    left: 9%;
+    right: 9%;
+    top: 5vh;
+    z-index: 1;
+    font-size: 110px;
+    @include responsive(font-size, 86px, ipad);
+    @include responsive(font-size, 75px, phone);
+  }
+  @include media(phone) {
+  }
+  img {
+    position: absolute;
+    &:nth-of-type(1) {
+      width: 35%;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 10%;
+      @include responsive(width, 78%, ipad);
+      // margin: auto;
+    }
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+      right: 0;
+      bottom: 0;
+    }
+    &:nth-of-type(2) {
+      height: 70%;
+      @include media(ipad) {
+        height: 41%;
+        right: -32%;
+      }
+    }
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      height: 90%;
+      @include responsive(display, none, ipad);
+    }
+    &:nth-of-type(4) {
+      right: 0;
+      top: 0;
+    }
+    &:nth-of-type(5),
+    &:nth-of-type(6) {
+      left: 0;
+      bottom: 0;
+    }
+    &:nth-of-type(5) {
+      height: 24%;
+      @include media(ipad) {
+        height: 10%;
+        left: -3%;
+      }
+    }
+    &:nth-of-type(6) {
+      height: 55%;
+      @include media(ipad) {
+        height: 15%;
+      }
+    }
+    &:nth-of-type(7) {
+      right: 18%;
+      top: 18%;
+    }
+    &:nth-of-type(8) {
+      right: 24%;
+      bottom: 37%;
+    }
+    &:nth-of-type(9) {
+      right: 4%;
+      bottom: 38%;
+    }
+    &:nth-of-type(10) {
+      right: 27%;
+      bottom: 12%;
+      @include media(ipad) {
+        bottom: 60%;
+        right: 10%;
+      }
+      @include responsive(bottom, 50%, tablet);
+    }
+    &:nth-of-type(11) {
+      left: 20%;
+      bottom: 46%;
+      @include media(ipad) {
+        left: 50%;
+        bottom: 63%;
+      }
+      @include responsive(bottom, 52%, tablet);
+    }
+    &:nth-of-type(12) {
+      left: 4.5%;
+      bottom: 22%;
+      @include media(ipad) {
+        left: 10%;
+        bottom: 65%;
+      }
+      @include responsive(bottom, 55%, tablet);
+    }
+    &:nth-of-type(13) {
+      left: 22%;
+      bottom: 7%;
+    }
+  }
 }
 
 // FEATURES
 .feature {
   padding: 4rem 10%;
+  @include responsive(padding, 4rem 0, phone);
   .feature-inner {
     padding: 3rem 4rem;
+    @include responsive(padding, 1.5rem 2rem, phone);
   }
   .bordered-star {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: color(secondary);
   }
+  img {
+    max-width: 60%;
+    height: auto;
+  }
   li {
     margin-bottom: 1rem;
   }
   .badge {
-    padding: 0.5rem 1rem;
+    padding: 0.45rem 1rem;
     border-radius: 15px;
   }
   button {
     border-radius: 5px;
-    padding: 0.8rem 2rem;
+    padding: 0.5rem 2rem;
   }
   hr {
     border-top: 1px solid color(dark);
+  }
+  .main {
+    display: flex;
+    @include responsive(display, block, ipad);
+    .debit-card {
+      width: 30%;
+      @include responsive(width, 100%, ipad);
+      @include responsive(margin-bottom, 1.5rem, ipad);
+    }
+    .info {
+      width: 70%;
+      padding-left: 3rem;
+      @include responsive(width, 100%, ipad);
+      @include responsive(padding-left, 4rem, ipad_pro);
+      @include responsive(padding-left, 1.2rem, ipad);
+    }
   }
 }
 
